@@ -1,0 +1,29 @@
+@startuml
+
+
+class Customer {
+  id : int
+  firstName : String
+  lastName : String
+  eMail : String
+}
+
+class Booking {
+    id : int
+    trip : Trip;
+    customer : Customer;
+    tripStart : LocalDate;
+    tripEnd : LocalDate;
+}
+
+class Trip {
+  id : int
+  price : double
+  destination : String
+}
+
+Booking "*" --> "1" Trip: ist gebucht
+Booking "*" --> "1" Customer: bucht
+
+
+@enduml
