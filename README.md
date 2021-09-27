@@ -1,4 +1,4 @@
 # micro-project | travel agency
 
-https://github.com/2122-5ahitm-sew/01-microproject-MandelRosalieJanina.git
+https://2122-5ahitm-sew.github.io/01-microproject-MandelRosalieJanina/
 

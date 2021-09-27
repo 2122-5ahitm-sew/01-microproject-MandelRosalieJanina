@@ -10,16 +10,16 @@ class Customer {
 
 class Booking {
     id : int
-    reise : Reise;
-    kunde : Kunde ;
-    reiseStart : LocalDate;
-    reiseEnde : LocalDate;
+    trip : Trip;
+    customer : Customer;
+    tripStart : LocalDate;
+    tripEnd : LocalDate;
 }
 
 class Trip {
   id : int
-  preis : double
-  reiseZiel : String
+  price : double
+  destination : String
 }
 
 Booking "*" --> "1" Trip: ist gebucht
