@@ -28,6 +28,9 @@ public class Booking extends PanacheEntityBase {
     @Column(name = "TRIPEND")
     private LocalDate tripEnd;
 
+    @Column(name ="PAYED")
+    private boolean payed;
+
     public Booking(Trip trip, Customer customer, LocalDate tripStart, LocalDate tripEnd) {
         this.trip = trip;
         this.customer = customer;

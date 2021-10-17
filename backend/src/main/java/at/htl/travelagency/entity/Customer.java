@@ -13,15 +13,15 @@ public class Customer extends PanacheEntityBase {
     private Long id;
 
     @Column
-    private String fristName;
+    private String firstName;
 
     @Column
     private String lastName;
     @Column
     private String email;
 
-    public Customer(String fristName, String lastName, String email) {
-        this.fristName = fristName;
+    public Customer(String firstName, String lastName, String email) {
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
@@ -38,12 +38,12 @@ public class Customer extends PanacheEntityBase {
         this.id = id;
     }
 
-    public String getFristName() {
-        return fristName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFristName(String fristName) {
-        this.fristName = fristName;
+    public void setFirstName(String fristName) {
+        this.firstName = fristName;
     }
 
     public String getLastName() {
@@ -66,7 +66,7 @@ public class Customer extends PanacheEntityBase {
     public String toString() {
         return "Customer{" +
                 "id=" + id +
-                ", fristName='" + fristName + '\'' +
+                ", fristName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 '}';
