@@ -1,0 +1,19 @@
+GET http://localhost:8080/api/customer/findAll
+
+#####
+
+
+GET http://localhost:8080/api/customer/findById/6
+
+###
+
+
+POST http://localhost:8080/api/customer/create
+Content-Type: application/json
+
+{
+  "firstName": "paula",
+  "lastName" : "mandel",
+  "email": "paula@gmail.com"
+}
+
